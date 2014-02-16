@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name = "django-debug-toolbar-extras",
@@ -8,9 +8,8 @@ setup(
     description = "A collection of add-on panels for Django's debug_toolbar.",
     url = "http://github.com/crass/django-debug-toolbar-extras/",
     license = "BSD",
-    packages = [
-        "debug_toolbar_extras",
-    ],
+    packages = find_packages(),
+    include_package_data = True,
     classifiers = [
         "Development Status :: 4 - Beta",
         "Environment :: Web Environment",
