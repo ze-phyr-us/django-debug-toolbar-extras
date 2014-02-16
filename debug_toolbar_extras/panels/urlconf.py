@@ -24,12 +24,9 @@ class URLconfDebugPanel(DebugPanel):
         return ''
 
     def process_response(self, request, response):
-        debug = {}
-
         urlconf = import_module(settings.ROOT_URLCONF)
-
         self.record_stats({
             'urlconf': urlconf.__name__,
             'urlpatterns': urlconf.urlpatterns,
-            'debug': debug,
+            'debug': {},
         })
