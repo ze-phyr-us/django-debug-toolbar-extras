@@ -2,11 +2,11 @@ from django.conf import settings
 from django.utils.importlib import import_module
 from django.utils.translation import ugettext_lazy as _
 
-from debug_toolbar.panels import DebugPanel
+from debug_toolbar.panels import Panel
 
 
 
-class URLconfDebugPanel(DebugPanel):
+class URLconfPanel(Panel):
     """
     A panel that lists all url mappings for this request.
     """
