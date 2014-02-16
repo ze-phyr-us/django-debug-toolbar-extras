@@ -5,7 +5,7 @@ from django.conf import settings
 from django.utils.importlib import import_module
 from django.utils.translation import ugettext_lazy as _
 
-import debug_toolbar.urls
+#import debug_toolbar.urls
 from debug_toolbar.panels import DebugPanel
 
 import inspect
